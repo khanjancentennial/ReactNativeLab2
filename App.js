@@ -54,6 +54,7 @@ import { View, Text, TextInput, Button, StyleSheet, Switch } from "react-native"
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export default function HelloWorldApp() {
+  // use 'useState' for state management
   const [value, onChangeText] = useState('');
   const [isDarkMode, setDarkMode] = useState(false);
 
@@ -81,6 +82,7 @@ export default function HelloWorldApp() {
       />
       <Text style={{color: isDarkMode ? "white" : "black",marginBottom: 20,marginTop:20}}>Please press below switch button to enable and diable dark mode</Text>
       
+      {/* add Switch to navigate between light and dark mode */}
       <Switch 
         value={isDarkMode}
         onValueChange={toggleBackgroundColorChange}
@@ -89,6 +91,7 @@ export default function HelloWorldApp() {
   );
 }
 
+// css design part 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
