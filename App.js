@@ -82,7 +82,7 @@ export default function HelloWorldApp() {
       />
       <Text style={{color: isDarkMode ? "white" : "black",marginBottom: 20,marginTop:20}}>Please press below switch button to enable and diable dark mode</Text>
       
-      {/* add Switch to navigate between light and dark mode */}
+      {/* Task 3 add Switch to navigate between light and dark mode */}
       <Switch 
         value={isDarkMode}
         onValueChange={toggleBackgroundColorChange}
